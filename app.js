@@ -2,8 +2,6 @@ var http = require('http');
 var cluster = require('cluster');
 var numCPUs = require('os').cpus().length;
 var httpServer;
-
-
 //멀티 코어 클러스터
 httpServer = http.createServer(function(req, res) {
 }).listen(1337);
